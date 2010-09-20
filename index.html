@@ -1,0 +1,61 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <link rel="stylesheet" href="OpenLayers-2.10/theme/default/style.css" type="text/css" />
+    <link rel="stylesheet" href="OpenLayers-2.10/examples/style.css" type="text/css" />
+    <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script src="OpenLayers-2.10/lib/OpenLayers.js"></script>
+    <script type="text/javascript">
+var lon = 5;
+var lat = 40;
+var zoom = 5;
+var map, layer;
+
+function init(){
+  map = new OpenLayers.Map('map');
+  layer = new OpenLayers.Layer.WMS( "OpenLayers WMS", "http://vmap0.tiles.osgeo.org/wms/vmap0", {
+    layers: 'basic'
+  });
+  map.addLayer(layer);
+  polygonLayer = new OpenLayers.Layer.GML("KML", "Palestine.kml", {
+    format: OpenLayers.Format.KML,
+    formatOptions: {
+      extractStyles: true,
+      extractAttributes: true,
+      maxDepth: 2
+    }
+  });
+  map.zoomToExtent(new OpenLayers.Bounds(34.283333,29.516667,35.666667,33.286111));
+  map.addControl(new OpenLayers.Control.LayerSwitcher());
+
+
+  selectControl = new OpenLayers.Control.SelectFeature(polygonLayer, {
+    onSelect: function (feature) {
+      selectedFeature = feature;
+      popup = new OpenLayers.Popup.FramedCloud("chicken",
+        feature.geometry.getBounds().getCenterLonLat(),
+        null,
+        feature.attributes.description,
+        //"<div style='font-size:.8em'>Feature: " + feature.id +"<br />Area: " + feature.geometry.getArea()+"</div>",
+        null, true, function (evt) {
+          selectControl.unselect(selectedFeature);
+        });
+      feature.popup = popup;
+      map.addPopup(popup);
+    },
+    onUnselect: function (feature) {
+      map.removePopup(feature.popup);
+      feature.popup.destroy();
+      feature.popup = null;
+    }
+  });
+  map.addControl(selectControl);
+  selectControl.activate();
+  map.addLayer(polygonLayer);
+}
+    </script>
+  </head>
+  <body onload="init()" style="margin: 0; padding: 0;">
+    <div id="map"></div>
+    <div id="docs"></div>
+  </body>
+</html>
