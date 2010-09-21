@@ -1,5 +1,35 @@
 /*globals OpenLayers,google */
 "use strict";
+
+function popupContent(data) {
+  var content = '', image, term;
+  if (data.name) {
+    content += '<h2>' + data.name + '</h2>';
+  }
+  if (data.image_url) {
+    image = new Image();
+    image.src = data.image_url;
+    if (data.image_width) {
+      image.width = data.image_width;
+    }
+    if (data.image_height) {
+      image.height = data.image_height;
+    }
+    content += image.outerHTML;
+  }
+  if (data.facts) {
+    content += '<dl>';
+    for (term in data.facts) {
+      if (data.hasOwnProperty(term)) {
+        content += '<dt>' + term + '</dt>';
+        content += '<dd>' + data.facts[term] + '</dd>';
+      }
+    }
+    content += '</dl>';
+  }
+  return content;
+}
+
 function init() {
   var map = new OpenLayers.Map('map'),
     gphy = new OpenLayers.Layer.Google(
@@ -263,32 +293,11 @@ function init() {
         new OpenLayers.Projection("EPSG:4326"),
         map.getProjectionObject()
     ));
+  map.setOptions({
+      restrictedExtent: new OpenLayers.Bounds(31.2912038299, 29.4918327893, 37.2167015076, 36.2755556125).transform(
+        new OpenLayers.Projection("EPSG:4326"),
+        map.getProjectionObject()
+    )
+    });
   map.addControl(new OpenLayers.Control.LayerSwitcher());
-}
-
-function popupContent(data) {
-  var content = '', image;
-  if (data.name) {
-    content += '<h2>' + data.name + '</h2>';
-  }
-  if (data.image_url) {
-    image = new Image();
-    image.src = data.image_url;
-    if (data.image_width) {
-      image.width = data.image_width;
-    }
-    if (data.image_height) {
-      image.height = data.image_height;
-    }
-    content += image.outerHTML;
-  }
-  if (data.facts) {
-    content += '<dl>';
-    for (var term in data.facts) {
-      content += '<dt>' + term + '</dt>';
-      content += '<dd>' + data.facts[term] + '</dd>';
-    }
-    content += '</dl>';
-  }
-  return content;
 }
