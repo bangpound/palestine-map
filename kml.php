@@ -35,10 +35,13 @@ EOT
 // Create a new XML document wrapped in a QueryPath.
 // By default, it will point to the root element,
 // <author/>
-$record = qp('PalestineRemembered/Palestine.kml', 'Placemark');
+$record = qp('PalestineRemembered/Palestine.kml', 'Placemark', array(
+  'replace_entities' => TRUE,
+  'ignore_parser_warnings' => TRUE,
+));
 $nodes = array();
 foreach ($record as $node) {
-  $type = $node->branch()->find('styleUrl')->text();
+  $type = str_replace('#', '', $node->branch()->find('styleUrl')->text());
   $nodes[$type][] = $node->branch();
 }
 foreach ($nodes as $type => $items) {
