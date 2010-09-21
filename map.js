@@ -181,7 +181,7 @@ function init() {
 
 
   map.addLayers([gphy, gmap, ghyb, gsat]);
-  map.setBaseLayer(gsat);
+  map.setBaseLayer(gmap);
 
   OpenLayers.Array.filter(peaceNowLayers, function (options) {
     var polygonLayer = new OpenLayers.Layer.GML(options.name, options.url, {
