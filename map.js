@@ -187,12 +187,12 @@ function init() {
       }),
       selectControl = new OpenLayers.Control.SelectFeature(polygonLayer, {
         onSelect: function (feature) {
-          var selectedFeature = feature,
+          var content = popupContent(feature.attributes),
+            selectedFeature = feature,
             popup = new OpenLayers.Popup.FramedCloud("chicken",
               feature.geometry.getBounds().getCenterLonLat(),
               null,
-              feature.attributes.description,
-              //"<div style='font-size:.8em'>Feature: " + feature.id +"<br />Area: " + feature.geometry.getArea()+"</div>",
+              content,
               null, true, function (evt) {
                 selectControl.unselect(selectedFeature);
               });
@@ -230,4 +230,26 @@ function init() {
         map.getProjectionObject()
     ));
   map.addControl(new OpenLayers.Control.LayerSwitcher());
+}
+
+function popupContent(data) {
+  var content = '', image;
+  if (data.name) {
+    content += '<h2>' + data.name + '</h2>';
+  }
+  if (data.image_url) {
+    image = new Image();
+    image.src = data.image_url;
+    image.width = 300;
+    content += image.outerHTML;
+  }
+  if (data.facts) {
+    content += '<dl>';
+    for (var term in data.facts) {
+      content += '<dt>' + term + '</dt>';
+      content += '<dd>' + data.facts[term] + '</dd>';
+    }
+    content += '</dl>';
+  }
+  return content;
 }

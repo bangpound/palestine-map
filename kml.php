@@ -21,17 +21,6 @@
 
 require_once 'QueryPath-2.0.1/src/QueryPath/QueryPath.php';
 
-
-define('KML_STUB', <<<EOT
-<?xml version="1.0" encoding="UTF-8"?>
-<kml xmlns="http://earth.google.com/kml/2.0">
-<Document>
-    <name>PalestineRemembered.com</name>
-</Document>
-</kml>
-EOT
-);
-
 // Create a new XML document wrapped in a QueryPath.
 // By default, it will point to the root element,
 // <author/>
@@ -45,26 +34,66 @@ foreach ($record as $node) {
   $nodes[$type][] = $node->branch();
 }
 foreach ($nodes as $type => $items) {
-  $document = qp(KML_STUB, 'Document');
   $output = array(
     'type' => 'FeatureCollection',
     'features' => array(),
   );
   foreach ($items as $item) {
     $coordinates = explode(',', $item->branch('coordinates')->text());
+    $properties = transform_description($item->branch('description')->text());
+    $properties['name'] = $item->branch('name')->text();
+
     $output['features'][] = array(
       'type' => 'Feature',
       'geometry' => array(
         'type' => 'Point',
-        'coordinates' => array($coordinates[0], $coordinates[1]),
+        'coordinates' => array((float)$coordinates[0], (float)$coordinates[1]),
       ),
-      'properties' => array(
-        'name' => $item->branch('name')->text(),
-        'description' => $item->branch('description')->text(),
-      ),
+      'properties' => $properties,
     );
-    $document->append($item);
   }
-  $document->writeXML('PalestineRemembered/'. $type .'.kml');
   file_put_contents('PalestineRemembered/'. $type .'.json', json_encode($output));
+}
+
+function transform_description($html) {
+  $qp = @qp($html, NULL, array(
+    'replace_entities' => TRUE,
+    'ignore_parser_warnings' => TRUE,
+    'use_parser' => 'html',
+  ));
+  $output = array();
+  $qp->find('font[size=3]');
+  if ($qp->size()) {
+    foreach ($qp->branch('a') as $a) {
+      if ($a->text() == 'Slide show') {
+        $a->html('');
+      }
+    }
+
+    $qp->remove('img[src$="whiteGE.gif"]');
+
+    if ($qp->top('font[size=3]')->find('img')->size() == 1) {
+      $img = $qp->top('font[size=3]')->remove('img');
+      $output['image_url'] = $img->attr('src');
+    }
+
+    $qp->top('font[size=3]')->find('td[nowrap] b');
+    if ($qp->size() == 2) {
+      foreach ($qp as $item) {
+        $facts[] = array_filter(explode('<br/>', $item->innerHTML()));
+      }
+      while (!empty($facts[0]) && !empty($facts[1])) {
+        $output['facts'][array_pop($facts[0])] = array_pop($facts[1]);
+      }
+      $qp->html('');
+    }
+
+    $output['description'] = $qp->top('font[size=3]')->innerHTML();
+  }
+  else {
+    foreach ($qp->top('body')->children() as $node) {
+      $output['description'] = $node->html();
+    }
+  }
+  return $output;
 }
