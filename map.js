@@ -173,6 +173,22 @@ function init() {
   map.addLayers([gphy, gmap, ghyb, gsat]);
   map.setBaseLayer(gsat);
 
+  OpenLayers.Array.filter(peaceNowLayers, function (options) {
+    var polygonLayer = new OpenLayers.Layer.GML(options.name, options.url, {
+        format: OpenLayers.Format.KML,
+        formatOptions: {
+          extractStyles: options.styleMap ? false : true,
+          extractAttributes: true,
+          maxDepth: 2
+        },
+        styleMap: options.styleMap ? options.styleMap : null,
+        visibility: false
+      }, {
+        reproject: true
+      });
+
+    map.addLayer(polygonLayer);
+  });
   OpenLayers.Array.filter(palestineRememberedLayers, function (options) {
     var polygonLayer = new OpenLayers.Layer.Vector(options.name, {
         strategies: [new OpenLayers.Strategy.Fixed()],
@@ -207,21 +223,6 @@ function init() {
       });
     map.addControl(selectControl);
     selectControl.activate();
-    map.addLayer(polygonLayer);
-  });
-  OpenLayers.Array.filter(peaceNowLayers, function (options) {
-    var polygonLayer = new OpenLayers.Layer.GML(options.name, options.url, {
-        format: OpenLayers.Format.KML,
-        formatOptions: {
-          extractStyles: true,
-          extractAttributes: true,
-          maxDepth: 2
-        },
-        visibility: false
-      }, {
-        reproject: true
-      });
-
     map.addLayer(polygonLayer);
   });
 
