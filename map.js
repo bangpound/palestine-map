@@ -228,23 +228,25 @@ function init() {
       }),
       selectControl = new OpenLayers.Control.SelectFeature(polygonLayer, {
         onSelect: function (feature) {
-          console.log(feature);
-          var content = popupContent(feature.attributes),
-            selectedFeature = feature,
-            popup = new OpenLayers.Popup.FramedCloud("chicken",
-              feature.geometry.getBounds().getCenterLonLat(),
-              null,
-              feature.attributes.description,
-              null, true, function (evt) {
-                selectControl.unselect(selectedFeature);
-              });
-          feature.popup = popup;
-          map.addPopup(popup);
+          if (feature.attributes.hasOwnProperty('description')) {
+            var selectedFeature = feature,
+              popup = new OpenLayers.Popup.FramedCloud("chicken",
+                feature.geometry.getBounds().getCenterLonLat(),
+                null,
+                feature.attributes.description,
+                null, true, function (evt) {
+                  selectControl.unselect(selectedFeature);
+                });
+            feature.popup = popup;
+            map.addPopup(popup);
+          }
         },
         onUnselect: function (feature) {
-          map.removePopup(feature.popup);
-          feature.popup.destroy();
-          feature.popup = null;
+          if (feature.hasOwnProperty('popup')) {
+            map.removePopup(feature.popup);
+            feature.popup.destroy();
+            feature.popup = null;
+          }
         }
       });
     map.addControl(selectControl);
