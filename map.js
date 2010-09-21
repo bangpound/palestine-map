@@ -259,7 +259,7 @@ function init() {
     map.addLayer(polygonLayer);
   });
 
-  map.zoomToExtent(new OpenLayers.Bounds(34.283333, 29.516667, 35.666667, 33.286111).transform(
+  map.zoomToExtent(new OpenLayers.Bounds(31.2912038299, 29.4918327893, 37.2167015076, 36.2755556125).transform(
         new OpenLayers.Projection("EPSG:4326"),
         map.getProjectionObject()
     ));
