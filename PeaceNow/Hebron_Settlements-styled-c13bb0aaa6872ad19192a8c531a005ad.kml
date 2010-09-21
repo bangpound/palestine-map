@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="Settlements_in_Hebron">
+  <name>Settlements_in_Hebron</name>
+  <Snippet/>
+  <Folder id="FeatureLayer0">
+    <name>Settlements_in_Hebron</name>
+  <Snippet/>
+    <Placemark>
+      
+      <styleUrl>#PolyStyle00</styleUrl>
+      <Snippet/>
+      <MultiGeometry>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <extrude>0</extrude>
+          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 35.109277,31.524204,0.000000 35.109624,31.524499,0.000000 35.109963,31.524711,0.000000 35.110032,31.524722,0.000000 35.110149,31.524782,0.000000 35.110358,31.524566,0.000000 35.110288,31.524507,0.000000 35.110362,31.524343,0.000000 35.110332,31.524298,0.000000 35.110480,31.524168,0.000000 35.110441,31.524127,0.000000 35.110515,31.524023,0.000000 35.110545,31.523952,0.000000 35.110545,31.523852,0.000000 35.110479,31.523680,0.000000 35.110418,31.523495,0.000000 35.110363,31.523279,0.000000 35.110068,31.523337,0.000000 35.109908,31.523390,0.000000 35.109816,31.523535,0.000000 35.109712,31.523677,0.000000 35.109403,31.523665,0.000000 35.109368,31.523993,0.000000 35.109342,31.524082,0.000000 35.109277,31.524204,0.000000</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark>
+      
+      <styleUrl>#PolyStyle00</styleUrl>
+      <Snippet/>
+      <MultiGeometry>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <extrude>0</extrude>
+          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 35.104275,31.524785,0.000000 35.103837,31.525207,0.000000 35.103611,31.525475,0.000000 35.103570,31.525595,0.000000 35.103476,31.525661,0.000000 35.103317,31.525832,0.000000 35.103103,31.526072,0.000000 35.103107,31.526162,0.000000 35.103666,31.525932,0.000000 35.103905,31.525814,0.000000 35.104092,31.525656,0.000000 35.103960,31.525527,0.000000 35.104045,31.525456,0.000000 35.104205,31.525332,0.000000 35.104345,31.525188,0.000000 35.104418,31.524908,0.000000 35.104275,31.524785,0.000000</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark>
+      
+      <styleUrl>#PolyStyle00</styleUrl>
+      <Snippet/>
+      <MultiGeometry>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <extrude>0</extrude>
+          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 35.105870,31.523047,0.000000 35.106094,31.523259,0.000000 35.106268,31.523489,0.000000 35.106264,31.523741,0.000000 35.106283,31.523947,0.000000 35.107020,31.524000,0.000000 35.107086,31.523748,0.000000 35.107245,31.523748,0.000000 35.107288,31.523586,0.000000 35.107594,31.523589,0.000000 35.107765,31.523098,0.000000 35.106835,31.522855,0.000000 35.106347,31.522924,0.000000 35.105870,31.523047,0.000000</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark>
+      
+      <styleUrl>#PolyStyle00</styleUrl>
+      <Snippet/>
+      <MultiGeometry>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <extrude>0</extrude>
+          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 35.105038,31.525247,0.000000 35.105209,31.525058,0.000000 35.105162,31.524968,0.000000 35.105337,31.524769,0.000000 35.105422,31.524716,0.000000 35.105074,31.524424,0.000000 35.105175,31.524228,0.000000 35.104721,31.524038,0.000000 35.104294,31.524739,0.000000 35.105038,31.525247,0.000000</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark>
+      
+      <styleUrl>#PolyStyle00</styleUrl>
+      <Snippet/>
+      <MultiGeometry>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <extrude>0</extrude>
+          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 35.100856,31.524942,0.000000 35.101391,31.524972,0.000000 35.101588,31.524989,0.000000 35.102131,31.524744,0.000000 35.101706,31.524136,0.000000 35.101407,31.524222,0.000000 35.100926,31.524444,0.000000 35.101093,31.524756,0.000000 35.100817,31.524899,0.000000 35.100856,31.524942,0.000000</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark>
+      
+      <styleUrl>#PolyStyle00</styleUrl>
+      <Snippet/>
+      <MultiGeometry>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <extrude>0</extrude>
+          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 35.112517,31.526720,0.000000 35.112714,31.526931,0.000000 35.112745,31.525981,0.000000 35.112662,31.525919,0.000000 35.112078,31.526249,0.000000 35.112517,31.526720,0.000000</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark>
+      
+      <styleUrl>#PolyStyle00</styleUrl>
+      <Snippet/>
+      <MultiGeometry>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <extrude>0</extrude>
+          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 35.099920,31.525129,0.000000 35.099839,31.524753,0.000000 35.099803,31.524577,0.000000 35.099767,31.524295,0.000000 35.099276,31.524288,0.000000 35.098712,31.524444,0.000000 35.098185,31.524425,0.000000 35.097555,31.524349,0.000000 35.097606,31.524582,0.000000 35.097196,31.524575,0.000000 35.096874,31.524506,0.000000 35.096852,31.524694,0.000000 35.097079,31.524813,0.000000 35.097804,31.524801,0.000000 35.097964,31.525190,0.000000 35.099920,31.525129,0.000000</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark>
+      
+      <styleUrl>#PolyStyle00</styleUrl>
+      <Snippet/>
+      <MultiGeometry>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <extrude>0</extrude>
+          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 35.120271,31.524635,0.000000 35.125249,31.522747,0.000000 35.125658,31.512606,0.000000 35.117111,31.512773,0.000000 35.111649,31.518475,0.000000 35.111647,31.519610,0.000000 35.111606,31.521397,0.000000 35.112207,31.521707,0.000000 35.113249,31.523255,0.000000 35.113891,31.523977,0.000000 35.115736,31.524494,0.000000 35.117060,31.524873,0.000000 35.120271,31.524635,0.000000</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark>
+      
+      <styleUrl>#PolyStyle00</styleUrl>
+      <Snippet/>
+      <MultiGeometry>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <extrude>0</extrude>
+          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 35.106672,31.523356,0.000000 35.107086,31.523223,0.000000 35.107163,31.523190,0.000000 35.107195,31.523113,0.000000 35.107112,31.523074,0.000000 35.106957,31.523030,0.000000 35.106815,31.523024,0.000000 35.106685,31.523024,0.000000 35.106647,31.523041,0.000000 35.106492,31.523079,0.000000 35.106672,31.523356,0.000000</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+    <Placemark>
+      
+      <styleUrl>#PolyStyle00</styleUrl>
+      <Snippet/>
+      <MultiGeometry>
+        <Polygon>
+          <tessellate>1</tessellate>
+          <extrude>0</extrude>
+          <altitudeMode>clampToGround</altitudeMode>
+          <outerBoundaryIs><LinearRing><coordinates> 35.107712,31.523163,0.000000 35.107234,31.523036,0.000000 35.107144,31.523235,0.000000 35.107130,31.523439,0.000000 35.107124,31.523572,0.000000 35.107634,31.523628,0.000000 35.108073,31.523694,0.000000 35.108215,31.523694,0.000000 35.108215,31.523606,0.000000 35.108002,31.523495,0.000000 35.107821,31.523418,0.000000 35.107750,31.523362,0.000000 35.107796,31.523202,0.000000 35.107712,31.523163,0.000000</coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </MultiGeometry>
+    </Placemark>
+  </Folder>
+  <Style id="PolyStyle00"><LineStyle><color>66f2db97</color><width>0.1</width></LineStyle><PolyStyle><color>66f2db97</color></PolyStyle></Style>
+</Document>
+</kml>

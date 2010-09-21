@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document id="SettlementsPoints">
+  <name>SettlementsPoints</name>
+  <Snippet/>
+  <Folder id="FeatureLayer0">
+    <name>SettlementsPoints</name>
+  <Snippet/>
+    <Placemark>
+      
+      <Snippet/>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> 35.243357,31.753833,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      
+      <Snippet/>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> 35.252228,31.763492,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      
+      <Snippet/>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> 35.230564,31.791935,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      
+      <Snippet/>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> 35.241106,31.772882,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      
+      <Snippet/>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> 35.243765,31.778581,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      
+      <Snippet/>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> 35.235612,31.772958,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      
+      <Snippet/>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> 35.230440,31.766178,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      
+      <Snippet/>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> 35.243467,31.788003,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      
+      <Snippet/>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> 35.246760,31.786163,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      
+      <Snippet/>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> 35.228909,31.760977,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      
+      <Snippet/>
+      <styleUrl>#IconStyle00</styleUrl>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> 35.233189,31.781371,0.000000</coordinates>
+      </Point>
+    </Placemark>
+  </Folder>
+  <Style id="IconStyle00"><IconStyle><Icon><href>http://peacenow.org/redstar.png</href></Icon></IconStyle></Style>
+<drawOrder>31</drawOrder></Document>
+</kml>

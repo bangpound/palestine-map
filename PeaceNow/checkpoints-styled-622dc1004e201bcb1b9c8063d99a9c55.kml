@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="cp">
+  <name>cp</name>
+  <Snippet/>
+  <Folder id="FeatureLayer0">
+    <name>cp</name>
+  <Snippet/>
+    <Placemark>
+      
+      <styleUrl>#IconStyle00</styleUrl>
+      <Snippet/>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> 35.006047,32.039675,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      
+      <styleUrl>#IconStyle00</styleUrl>
+      <Snippet/>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> 35.256469,32.115051,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      
+      <styleUrl>#IconStyle00</styleUrl>
+      <Snippet/>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> 35.281915,32.181848,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      
+      <styleUrl>#IconStyle00</styleUrl>
+      <Snippet/>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> 35.378661,32.088748,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      
+      <styleUrl>#IconStyle00</styleUrl>
+      <Snippet/>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> 35.448258,32.206091,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      
+      <styleUrl>#IconStyle00</styleUrl>
+      <Snippet/>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> 35.434676,32.328375,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      
+      <styleUrl>#IconStyle00</styleUrl>
+      <Snippet/>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> 35.316908,32.199200,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      
+      <styleUrl>#IconStyle00</styleUrl>
+      <Snippet/>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> 35.265637,32.204796,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      
+      <styleUrl>#IconStyle00</styleUrl>
+      <Snippet/>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> 35.116611,32.450109,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      
+      <styleUrl>#IconStyle00</styleUrl>
+      <Snippet/>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> 34.998132,32.184490,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      
+      <styleUrl>#IconStyle00</styleUrl>
+      <Snippet/>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> 35.135008,32.289761,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      
+      <styleUrl>#IconStyle00</styleUrl>
+      <Snippet/>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> 35.037428,32.279967,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      
+      <styleUrl>#IconStyle00</styleUrl>
+      <Snippet/>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> 35.187275,32.264053,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      
+      <styleUrl>#IconStyle00</styleUrl>
+      <Snippet/>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> 34.962739,31.590770,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      
+      <styleUrl>#IconStyle00</styleUrl>
+      <Snippet/>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> 35.204305,31.723392,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      
+      <styleUrl>#IconStyle00</styleUrl>
+      <Snippet/>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> 35.167758,31.705128,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      
+      <styleUrl>#IconStyle00</styleUrl>
+      <Snippet/>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> 35.053896,31.670277,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      
+      <styleUrl>#IconStyle00</styleUrl>
+      <Snippet/>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> 35.199688,31.982376,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      
+      <styleUrl>#IconStyle00</styleUrl>
+      <Snippet/>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> 35.122289,31.712671,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      
+      <styleUrl>#IconStyle00</styleUrl>
+      <Snippet/>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> 35.406571,31.580848,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      
+      <styleUrl>#IconStyle00</styleUrl>
+      <Snippet/>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> 35.258076,31.780110,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      
+      <styleUrl>#IconStyle00</styleUrl>
+      <Snippet/>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> 35.224970,31.923573,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      
+      <styleUrl>#IconStyle00</styleUrl>
+      <Snippet/>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> 35.042011,31.897028,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      
+      <styleUrl>#IconStyle00</styleUrl>
+      <Snippet/>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> 35.032259,31.940697,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      
+      <styleUrl>#IconStyle00</styleUrl>
+      <Snippet/>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> 35.176315,31.882187,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      
+      <styleUrl>#IconStyle00</styleUrl>
+      <Snippet/>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> 35.288795,31.742409,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      
+      <styleUrl>#IconStyle00</styleUrl>
+      <Snippet/>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> 35.242239,31.809115,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      
+      <styleUrl>#IconStyle00</styleUrl>
+      <Snippet/>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> 35.251088,31.827400,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      
+      <styleUrl>#IconStyle00</styleUrl>
+      <Snippet/>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> 35.263149,31.782948,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      
+      <styleUrl>#IconStyle00</styleUrl>
+      <Snippet/>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> 35.443043,31.823177,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      
+      <styleUrl>#IconStyle00</styleUrl>
+      <Snippet/>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> 35.415038,31.921271,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      
+      <styleUrl>#IconStyle00</styleUrl>
+      <Snippet/>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> 35.502077,31.865782,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      
+      <styleUrl>#IconStyle00</styleUrl>
+      <Snippet/>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> 35.226772,31.861960,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      
+      <styleUrl>#IconStyle00</styleUrl>
+      <Snippet/>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> 35.254993,31.853686,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      
+      <styleUrl>#IconStyle00</styleUrl>
+      <Snippet/>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> 35.111687,31.371995,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      
+      <styleUrl>#IconStyle00</styleUrl>
+      <Snippet/>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> 35.179763,32.432233,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      
+      <styleUrl>#IconStyle00</styleUrl>
+      <Snippet/>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> 35.246258,31.714590,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      
+      <styleUrl>#IconStyle00</styleUrl>
+      <Snippet/>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> 35.006160,32.107290,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      
+      <styleUrl>#IconStyle00</styleUrl>
+      <Snippet/>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> 35.015420,32.289982,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      
+      <styleUrl>#IconStyle00</styleUrl>
+      <Snippet/>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> 35.175726,31.870855,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      
+      <styleUrl>#IconStyle00</styleUrl>
+      <Snippet/>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> 35.251065,31.739300,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      
+      <styleUrl>#IconStyle00</styleUrl>
+      <Snippet/>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> 35.240094,31.812474,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      
+      <styleUrl>#IconStyle00</styleUrl>
+      <Snippet/>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> 35.017628,32.116535,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      
+      <styleUrl>#IconStyle00</styleUrl>
+      <Snippet/>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> 35.175277,31.856653,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      
+      <styleUrl>#IconStyle00</styleUrl>
+      <Snippet/>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> 35.161577,32.468369,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      
+      <styleUrl>#IconStyle00</styleUrl>
+      <Snippet/>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> 35.054273,32.410728,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      
+      <styleUrl>#IconStyle00</styleUrl>
+      <Snippet/>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> 34.998786,32.192843,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      
+      <styleUrl>#IconStyle00</styleUrl>
+      <Snippet/>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> 35.494056,32.400539,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      
+      <styleUrl>#IconStyle00</styleUrl>
+      <Snippet/>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> 35.211734,32.541100,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      
+      <styleUrl>#IconStyle00</styleUrl>
+      <Snippet/>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> 35.307576,32.510093,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      
+      <styleUrl>#IconStyle00</styleUrl>
+      <Snippet/>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> 34.933540,31.344955,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      
+      <styleUrl>#IconStyle00</styleUrl>
+      <Snippet/>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> 35.058013,31.357656,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      
+      <styleUrl>#IconStyle00</styleUrl>
+      <Snippet/>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> 35.170721,31.742063,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      
+      <styleUrl>#IconStyle00</styleUrl>
+      <Snippet/>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> 35.011097,32.292190,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      
+      <styleUrl>#IconStyle00</styleUrl>
+      <Snippet/>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> 34.970311,32.199602,0.000000</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      
+      <styleUrl>#IconStyle00</styleUrl>
+      <Snippet/>
+      <Point>
+        <extrude>0</extrude>
+        <altitudeMode>relativeToGround</altitudeMode>
+        <coordinates> 35.159871,31.831193,0.000000</coordinates>
+      </Point>
+    </Placemark>
+  </Folder>
+  <Style id="IconStyle00"><IconStyle><Icon><href>http://peacenow.org/redtriangle.png</href></Icon></IconStyle></Style>
+<drawOrder>33</drawOrder></Document>
+</kml>

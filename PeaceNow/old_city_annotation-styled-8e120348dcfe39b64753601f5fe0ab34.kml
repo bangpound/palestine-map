@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document id="Old_City_RovasAnno">
+  <name>Old_City_RovasAnno</name>
+  <Snippet></Snippet>
+  <GroundOverlay id="0">
+    <Snippet></Snippet>
+    <drawOrder>1000</drawOrder>
+    <name>Old_City_RovasAnno</name>
+    <Icon>
+      <href>_ags20705a6643dd43e6a73a7c553a4f131f.png</href>
+      <viewBoundScale>1.0</viewBoundScale>
+    </Icon>
+    <LatLonBox>
+      <north>31.781647</north>
+      <south>31.773431</south>
+      <east>35.238114</east>
+      <west>35.224204</west>
+      <rotation>0</rotation>
+    </LatLonBox>
+  </GroundOverlay>
+</Document>
+</kml>
