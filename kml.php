@@ -46,8 +46,25 @@ foreach ($record as $node) {
 }
 foreach ($nodes as $type => $items) {
   $document = qp(KML_STUB, 'Document');
+  $output = array(
+    'type' => 'FeatureCollection',
+    'features' => array(),
+  );
   foreach ($items as $item) {
+    $coordinates = explode(',', $item->branch('coordinates')->text());
+    $output['features'][] = array(
+      'type' => 'Feature',
+      'geometry' => array(
+        'type' => 'Point',
+        'coordinates' => array($coordinates[0], $coordinates[1]),
+      ),
+      'properties' => array(
+        'name' => $item->branch('name')->text(),
+        'description' => $item->branch('description')->text(),
+      ),
+    );
     $document->append($item);
   }
   $document->writeXML('PalestineRemembered/'. $type .'.kml');
+  file_put_contents('PalestineRemembered/'. $type .'.json', json_encode($output));
 }

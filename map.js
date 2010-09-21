@@ -20,7 +20,7 @@ function init() {
     ),
     palestineRememberedLayers = [{
       name: 'Destroyed villages',
-      url: 'PalestineRemembered/DestroyedTown.kml',
+      url: 'PalestineRemembered/DestroyedTown.json',
       styleMap: new OpenLayers.StyleMap({
         "default": new OpenLayers.Style({
           graphicName: "circle",
@@ -33,7 +33,7 @@ function init() {
       })
     }, {
       name: 'Gaza Strip',
-      url: 'PalestineRemembered/GazaStripTown.kml',
+      url: 'PalestineRemembered/GazaStripTown.json',
       styleMap: new OpenLayers.StyleMap({
         "default": new OpenLayers.Style({
           graphicName: "circle",
@@ -46,7 +46,7 @@ function init() {
       })
     }, {
       name: 'Israeli Town',
-      url: 'PalestineRemembered/IsraeliTown.kml',
+      url: 'PalestineRemembered/IsraeliTown.json',
       styleMap: new OpenLayers.StyleMap({
         "default": new OpenLayers.Style({
           graphicName: "circle",
@@ -59,7 +59,7 @@ function init() {
       })
     }, {
       name: 'Refugee Camp',
-      url: 'PalestineRemembered/RefugeeCamp.kml',
+      url: 'PalestineRemembered/RefugeeCamp.json',
       styleMap: new OpenLayers.StyleMap({
         "default": new OpenLayers.Style({
           graphicName: "circle",
@@ -72,7 +72,7 @@ function init() {
       })
     }, {
       name: 'Neighboring County Town',
-      url: 'PalestineRemembered/NeighboringCountyTown.kml',
+      url: 'PalestineRemembered/NeighboringCountyTown.json',
       styleMap: new OpenLayers.StyleMap({
         "default": new OpenLayers.Style({
           graphicName: "circle",
@@ -85,7 +85,7 @@ function init() {
       })
     }, {
       name: 'PaliIsraeliTown',
-      url: 'PalestineRemembered/PaliIsraeliTown.kml',
+      url: 'PalestineRemembered/PaliIsraeliTown.json',
       styleMap: new OpenLayers.StyleMap({
         "default": new OpenLayers.Style({
           graphicName: "circle",
@@ -98,7 +98,7 @@ function init() {
       })
     }, {
       name: 'West Bank Town',
-      url: 'PalestineRemembered/WestBankTown.kml',
+      url: 'PalestineRemembered/WestBankTown.json',
       styleMap: new OpenLayers.StyleMap({
         "default": new OpenLayers.Style({
           graphicName: "circle",
@@ -174,13 +174,12 @@ function init() {
   map.setBaseLayer(gsat);
 
   OpenLayers.Array.filter(palestineRememberedLayers, function (options) {
-    var polygonLayer = new OpenLayers.Layer.GML(options.name, options.url, {
-        format: OpenLayers.Format.KML,
-        formatOptions: {
-          extractStyles: false,
-          extractAttributes: true,
-          maxDepth: 2
-        },
+    var polygonLayer = new OpenLayers.Layer.Vector(options.name, {
+        strategies: [new OpenLayers.Strategy.Fixed()],
+        protocol: new OpenLayers.Protocol.HTTP({
+          url: options.url,
+          format: new OpenLayers.Format.GeoJSON()
+        }),
         styleMap: options.styleMap,
         visibility: false
       }, {
