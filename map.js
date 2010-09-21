@@ -215,6 +215,7 @@ function init() {
 
   OpenLayers.Array.filter(peaceNowLayers, function (options) {
     var polygonLayer = new OpenLayers.Layer.GML(options.name, options.url, {
+        projection: new OpenLayers.Projection("EPSG:4326"),
         format: OpenLayers.Format.KML,
         formatOptions: {
           extractStyles: options.styleMap ? false : true,
@@ -223,8 +224,6 @@ function init() {
         },
         styleMap: options.styleMap ? options.styleMap : null,
         visibility: false
-      }, {
-        reproject: true
       }),
       selectControl = new OpenLayers.Control.SelectFeature(polygonLayer, {
         onSelect: function (feature) {
@@ -256,6 +255,7 @@ function init() {
   });
   OpenLayers.Array.filter(palestineRememberedLayers, function (options) {
     var polygonLayer = new OpenLayers.Layer.Vector(options.name, {
+        projection: new OpenLayers.Projection("EPSG:4326"),
         strategies: [new OpenLayers.Strategy.Fixed()],
         protocol: new OpenLayers.Protocol.HTTP({
           url: options.url,
@@ -263,8 +263,6 @@ function init() {
         }),
         styleMap: options.styleMap,
         visibility: false
-      }, {
-        reproject: true
       }),
       selectControl = new OpenLayers.Control.SelectFeature(polygonLayer, {
         onSelect: function (feature) {
