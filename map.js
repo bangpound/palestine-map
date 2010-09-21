@@ -240,7 +240,12 @@ function popupContent(data) {
   if (data.image_url) {
     image = new Image();
     image.src = data.image_url;
-    image.width = 300;
+    if (data.image_width) {
+      image.width = data.image_width;
+    }
+    if (data.image_height) {
+      image.height = data.image_height;
+    }
     content += image.outerHTML;
   }
   if (data.facts) {

@@ -75,6 +75,8 @@ function transform_description($html) {
     if ($qp->top('font[size=3]')->find('img')->size() == 1) {
       $img = $qp->top('font[size=3]')->remove('img');
       $output['image_url'] = $img->attr('src');
+      $output['image_width'] = $img->attr('width');
+      $output['image_height'] = $img->attr('height');
     }
 
     $qp->top('font[size=3]')->find('td[nowrap] b');
