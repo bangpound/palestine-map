@@ -160,7 +160,17 @@ function init() {
       url: 'PeaceNow/private_lands-styled-3407b316d5a408adecf146e5d8bdc88f.kml'
     }, {
       name: 'settlement pins',
-      url: 'PeaceNow/settlement_pins-styled-ee5ed7a4b60baf81bcc8010a758237e8.kml'
+      url: 'PeaceNow/settlement_pins-styled-ee5ed7a4b60baf81bcc8010a758237e8.kml',
+      styleMap: new OpenLayers.StyleMap({
+        "default": new OpenLayers.Style({
+          graphicName: "circle",
+          pointRadius: 3,
+          fillOpacity: 0.25,
+          fillColor: "green",
+          strokeColor: "green",
+          strokeWidth: 1
+        })
+      })
     }, {
       name: 'settlements_in_pal_nghbrhd',
       url: 'PeaceNow/settlements_in_pal_nghbrhd-styled-a03ed5d273b5f9a036df944b1c17fdc8.kml'
@@ -185,7 +195,30 @@ function init() {
         visibility: false
       }, {
         reproject: true
+      }),
+      selectControl = new OpenLayers.Control.SelectFeature(polygonLayer, {
+        onSelect: function (feature) {
+          console.log(feature);
+          var content = popupContent(feature.attributes),
+            selectedFeature = feature,
+            popup = new OpenLayers.Popup.FramedCloud("chicken",
+              feature.geometry.getBounds().getCenterLonLat(),
+              null,
+              feature.attributes.description,
+              null, true, function (evt) {
+                selectControl.unselect(selectedFeature);
+              });
+          feature.popup = popup;
+          map.addPopup(popup);
+        },
+        onUnselect: function (feature) {
+          map.removePopup(feature.popup);
+          feature.popup.destroy();
+          feature.popup = null;
+        }
       });
+    map.addControl(selectControl);
+    selectControl.activate();
 
     map.addLayer(polygonLayer);
   });
