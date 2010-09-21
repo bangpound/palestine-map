@@ -90,7 +90,7 @@ function transform_description($html) {
       $qp->html('');
     }
 
-    $output['description'] = $qp->top('font[size=3]')->innerHTML();
+    $output['description'] = trim(preg_replace('/\s+/i', ' ', $qp->top('font[size=3]')->text()));
   }
   else {
     foreach ($qp->top('body')->children() as $node) {
