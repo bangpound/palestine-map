@@ -32,22 +32,10 @@ function popupContent(data) {
 
 function init() {
   var map = new OpenLayers.Map('map'),
-    gphy = new OpenLayers.Layer.Google(
-      "Google Physical",
-      {type: google.maps.MapTypeId.TERRAIN}
-    ),
-    gmap = new OpenLayers.Layer.Google(
-      "Google Streets", // the default
-      {numZoomLevels: 20}
-    ),
-    ghyb = new OpenLayers.Layer.Google(
-      "Google Hybrid",
-      {type: google.maps.MapTypeId.HYBRID, numZoomLevels: 20}
-    ),
-    gsat = new OpenLayers.Layer.Google(
-      "Google Satellite",
-      {type: google.maps.MapTypeId.SATELLITE, numZoomLevels: 22}
-    ),
+    wms = new OpenLayers.Layer.WMS("OpenLayers WMS",
+      "http://vmap0.tiles.osgeo.org/wms/vmap0", {
+        layers: 'basic'
+      }),
     palestineRememberedLayers = [{
       name: 'Destroyed villages',
       url: 'PalestineRemembered/DestroyedTown.json',
@@ -210,8 +198,8 @@ function init() {
     }];
 
 
-  map.addLayers([gphy, gmap, ghyb, gsat]);
-  map.setBaseLayer(gmap);
+  map.addLayers([wms]);
+  map.setBaseLayer(wms);
 
   OpenLayers.Array.filter(peaceNowLayers, function (options) {
     var polygonLayer = new OpenLayers.Layer.GML(options.name, options.url, {
