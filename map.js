@@ -37,9 +37,11 @@ function init() {
   var map = new OpenLayers.Map('map', {
         controls: [
           new OpenLayers.Control.Navigation(),
-          new OpenLayers.Control.PanZoomBar(),
+          new OpenLayers.Control.NavToolbar(),
+          new OpenLayers.Control.PanZoom(),
           new OpenLayers.Control.ArgParser(),
           new OpenLayers.Control.LayerSwitcher(),
+          new OpenLayers.Control.OverviewMap(),
           new OpenLayers.Control.Permalink()
         ]
       }),
