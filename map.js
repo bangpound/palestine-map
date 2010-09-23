@@ -60,6 +60,7 @@ function init() {
             fillColor: "blue",
             strokeColor: "blue",
             strokeWidth: 1
+          })
         })
       }
     }, {
