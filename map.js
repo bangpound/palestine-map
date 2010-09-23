@@ -27,6 +27,9 @@ function popupContent(data) {
     }
     content += '</dl>';
   }
+  if (data.description) {
+    content += '<p>' + data.description + '</p>';
+  }
   return content;
 }
 
@@ -289,7 +292,7 @@ function init() {
               popup = new OpenLayers.Popup.FramedCloud("chicken",
                 feature.geometry.getBounds().getCenterLonLat(),
                 null,
-                feature.attributes.description,
+                popupContent(feature.attributes),
                 null, true, function (evt) {
                   selectControl.unselect(selectedFeature);
                 });
