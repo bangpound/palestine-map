@@ -20,7 +20,7 @@ function popupContent(data) {
   if (data.facts) {
     content += '<dl>';
     for (term in data.facts) {
-      if (data.hasOwnProperty(term)) {
+      if (data.facts.hasOwnProperty(term)) {
         content += '<dt>' + term + '</dt>';
         content += '<dd>' + data.facts[term] + '</dd>';
       }
