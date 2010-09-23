@@ -31,7 +31,15 @@ function popupContent(data) {
 }
 
 function init() {
-  var map = new OpenLayers.Map('map'),
+  var map = new OpenLayers.Map('map', {
+        controls: [
+          new OpenLayers.Control.Navigation(),
+          new OpenLayers.Control.PanZoomBar(),
+          new OpenLayers.Control.ArgParser(),
+          new OpenLayers.Control.LayerSwitcher(),
+          new OpenLayers.Control.Permalink()
+        ]
+      }),
     wms = new OpenLayers.Layer.WMS("OpenLayers WMS",
       "http://vmap0.tiles.osgeo.org/wms/vmap0", {
         layers: 'basic'
@@ -287,5 +295,4 @@ function init() {
         map.getProjectionObject()
     )
     });
-  map.addControl(new OpenLayers.Control.LayerSwitcher());
 }
