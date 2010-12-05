@@ -316,10 +316,12 @@ function init() {
     map.addLayer(layer);
   });
 
-  map.zoomToExtent(new OpenLayers.Bounds(31.2912038299, 29.4918327893, 37.2167015076, 36.2755556125).transform(
-        new OpenLayers.Projection("EPSG:4326"),
-        map.getProjectionObject()
-    ));
+  if (!map.getCenter()) {
+    map.zoomToExtent(new OpenLayers.Bounds(31.2912038299, 29.4918327893, 37.2167015076, 36.2755556125).transform(
+          new OpenLayers.Projection("EPSG:4326"),
+          map.getProjectionObject()
+      ));
+  }
   map.setOptions({
       restrictedExtent: new OpenLayers.Bounds(31.2912038299, 29.4918327893, 37.2167015076, 36.2755556125).transform(
         new OpenLayers.Projection("EPSG:4326"),
