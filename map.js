@@ -7,15 +7,16 @@ function popupContent(data) {
     content += '<h2>' + data.name + '</h2>';
   }
   if (data.image_url) {
-    image = new Image();
-    image.src = data.image_url;
+    image = '<img src="';
+    image += data.image_url + '"';
     if (data.image_width) {
-      image.width = data.image_width;
+      image += ' width="' + data.image_width + '"';
     }
     if (data.image_height) {
-      image.height = data.image_height;
+      image += ' height="' + data.image_height + '"';
     }
-    content += image.outerHTML;
+    image += ' />';
+    content += image;
   }
   if (data.facts) {
     content += '<dl>';
