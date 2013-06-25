@@ -53,7 +53,7 @@ function init() {
     layers = [{
       name: 'Destroyed villages',
       format: 'GeoJSON',
-      url: 'PalestineRemembered/DestroyedTown.json',
+      url: 'PalestineRemembered/DestroyedTown.geojson',
       options: {
         styleMap: new OpenLayers.StyleMap({
           "default": new OpenLayers.Style({
@@ -69,7 +69,7 @@ function init() {
     }, {
       name: 'Gaza Strip',
       format: 'GeoJSON',
-      url: 'PalestineRemembered/GazaStripTown.json',
+      url: 'PalestineRemembered/GazaStripTown.geojson',
       options: {
         styleMap: new OpenLayers.StyleMap({
           "default": new OpenLayers.Style({
@@ -85,7 +85,7 @@ function init() {
     }, {
       name: 'Israeli Town',
       format: 'GeoJSON',
-      url: 'PalestineRemembered/IsraeliTown.json',
+      url: 'PalestineRemembered/IsraeliTown.geojson',
       options: {
         styleMap: new OpenLayers.StyleMap({
           "default": new OpenLayers.Style({
@@ -101,7 +101,7 @@ function init() {
     }, {
       name: 'Refugee Camp',
       format: 'GeoJSON',
-      url: 'PalestineRemembered/RefugeeCamp.json',
+      url: 'PalestineRemembered/RefugeeCamp.geojson',
       options: {
         styleMap: new OpenLayers.StyleMap({
           "default": new OpenLayers.Style({
@@ -117,7 +117,7 @@ function init() {
     }, {
       name: 'Neighboring County Town',
       format: 'GeoJSON',
-      url: 'PalestineRemembered/NeighboringCountyTown.json',
+      url: 'PalestineRemembered/NeighboringCountyTown.geojson',
       options: {
         styleMap: new OpenLayers.StyleMap({
           "default": new OpenLayers.Style({
@@ -133,7 +133,7 @@ function init() {
     }, {
       name: 'PaliIsraeliTown',
       format: 'GeoJSON',
-      url: 'PalestineRemembered/PaliIsraeliTown.json',
+      url: 'PalestineRemembered/PaliIsraeliTown.geojson',
       options: {
         styleMap: new OpenLayers.StyleMap({
           "default": new OpenLayers.Style({
@@ -149,7 +149,7 @@ function init() {
     }, {
       name: 'West Bank Town',
       format: 'GeoJSON',
-      url: 'PalestineRemembered/WestBankTown.json',
+      url: 'PalestineRemembered/WestBankTown.geojson',
       options: {
         styleMap: new OpenLayers.StyleMap({
           "default": new OpenLayers.Style({
